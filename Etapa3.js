@@ -8,13 +8,13 @@
 var x = 30;
 var y = 200;
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 400);
 }
 function draw() {
   background(220);
   ellipse(x, y, 30, 30);
-  x = x + 3
-  if(x>400){
+  x = x + 6;
+  if(x>600){
     x = - random(1000);
   }
 }
