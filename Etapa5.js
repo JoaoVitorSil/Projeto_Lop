@@ -18,8 +18,8 @@ function setup() {
 function draw() {
   background(4,8,4);
   textSize(18);
-  fill(400, 400)
+  fill(400, 400);
   text('Vidas: '+contVidas, 20, 20);
   text('Pontuação: '+pontos, 480, 20);
-  text('Nível: '+nivel, 250, 20)
+  text('Nível: '+nivel, 250, 20);
 }
