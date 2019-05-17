@@ -31,6 +31,7 @@ function draw() {
   if(disparo == true){
     xd = xd + 12;
     if(xd>600){
+      xd = x;
       disparo = false;
     }  
   }
