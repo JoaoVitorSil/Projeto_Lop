@@ -15,7 +15,6 @@ var pontos = 0;
 var vidas = 5;
 var veljg = 7;
 var vel = 5;
-var s = 0;
 var contvel = 1;
 var disparo = false;
 function setup() {
