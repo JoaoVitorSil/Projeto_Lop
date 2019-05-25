@@ -2,7 +2,7 @@
     Equipe: 
         João Vitor da Conceição Silva I - Subturma A (Líder) 
         Iago Esron Santiago de Amarante II - Subturma A 
-        Etapa7
+        Etapa 7
 */
 
 var x = 200, y = 350;
