@@ -15,11 +15,9 @@ var pontos = 0;
 var vidas = 5;
 var veljg = 7;
 var vel = 5;
-var s = 0;
 var fase = 1;
-var barpt = 10;
 var contvel = 1;
-var colisão2 = [false]
+var colisão2 = [false];
 var colisão = [false, false];
 var disparo = false;
 function setup() {
@@ -36,10 +34,6 @@ function setup() {
 }
 
 function draw() {
-     if(pontos > barpt){
-       fase++
-        barpt+=10
-      }
     background(180);
     ellipse(x, y, raiojg, raiojg);
     text('Vidas: '+vidas,10, 390);
@@ -93,7 +87,7 @@ function draw() {
       if(colisão[i] == true){
         xo[i] = random(20 , 380);
         yo[i] = -random(600,100);
-        colisão[i] = false
+        colisão[i] = false;
       }  
     }  
     for(var cont=0 ; cont<1; cont++){
@@ -107,7 +101,7 @@ function draw() {
       for( cont=0 ; cont<1; cont++){  
         if(colisão2[cont] == false){
             if(dist(xd+5,yd+5,xi[cont]+15,yi[cont]+15) <= 20){
-                colisão2[cont] = true
+                colisão2[cont] = true;
                 disparo = false;
                 veljg++;
                 contvel++;
@@ -118,7 +112,7 @@ function draw() {
             if(colisão2[cont] == true){
                 xi[cont] = random(20 , 360);
                 yi[cont] = -random(1000,600);
-                colisão2[cont] = false
+                colisão2[cont] = false;
             }  
         } 
           if(contvel==15){
@@ -138,31 +132,31 @@ function draw() {
         }
       }
       if(pontos == 10 ){
-       fase = 2
+       fase = 2;
       } 
       if(fase == 2){
-         qt = 2
-         vel = 6
+         qt = 2;
+         vel = 6;
       } 
       if(pontos == 20){
-         fase = 3 
+         fase = 3;
       } 
       if(fase == 3){
-         qt = 3
-         vel = 7
+         qt = 3;
+         vel = 7;
       } 
       if(pontos == 30){
-         fase = 4 
+         fase = 4; 
       } 
       if(fase == 4){
-         qt = 4
-         vel = 8
+         qt = 4;
+         vel = 8;
       }
       if(pontos == 40){
-         fase = 5 
+         fase = 5;
       } 
       if(fase == 5){
-         qt = 5
-         vel = 9
+         qt = 5;
+         vel = 9;
       } 
   }
