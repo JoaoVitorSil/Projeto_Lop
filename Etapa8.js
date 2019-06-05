@@ -79,7 +79,6 @@ function draw() {
             colisão[i] = true
             disparo = false;
             pontos++;
-            barpt++;
          }  
       }
     } 
